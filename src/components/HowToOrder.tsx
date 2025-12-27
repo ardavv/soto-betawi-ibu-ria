@@ -3,14 +3,17 @@ export default function HowToOrder() {
     {
       title: "Pilih menu favorit",
       desc: "Cek best seller dan lihat harga dengan cepat.",
+      icon: "🍲",
     },
     {
       title: "Klik GoFood / GrabFood",
       desc: "Order paling cepat langsung dari aplikasi.",
+      icon: "📲",
     },
     {
       title: "Pesan & tunggu hangatnya datang",
       desc: "Kalau butuh bantuan, chat WhatsApp.",
+      icon: "🔥",
     },
   ];
 
@@ -30,19 +33,25 @@ export default function HowToOrder() {
           {steps.map((s, idx) => (
             <div
               key={s.title}
-              className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm"
+              className="group rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-amber-200/80 hover:shadow-md"
             >
               <div className="flex items-center gap-3">
-                <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-sm font-extrabold text-amber-900">
-                  {idx + 1}
+                <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-amber-50 text-lg font-extrabold text-amber-900 shadow-sm">
+                  {s.icon}
                 </div>
-                <div className="text-sm font-extrabold text-neutral-900">
-                  {s.title}
+                <div>
+                  <div className="text-xs font-semibold uppercase tracking-wide text-amber-700">
+                    Step {idx + 1}
+                  </div>
+                  <div className="text-sm font-extrabold text-neutral-900">
+                    {s.title}
+                  </div>
                 </div>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-neutral-600">
                 {s.desc}
               </p>
+              <div className="mt-4 h-1 w-14 rounded-full bg-amber-100 transition group-hover:w-20 group-hover:bg-amber-200" />
             </div>
           ))}
         </div>

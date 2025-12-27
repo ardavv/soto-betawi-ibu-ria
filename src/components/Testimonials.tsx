@@ -32,9 +32,15 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <figure
               key={t.quote}
-              className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm"
+              className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-200/80 hover:shadow-md"
             >
-              <blockquote className="text-sm leading-relaxed text-neutral-700">
+              <div className="flex items-center justify-between">
+                <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">
+                  Review pelanggan
+                </span>
+                <span className="text-xl text-emerald-400">“</span>
+              </div>
+              <blockquote className="mt-3 text-sm leading-relaxed text-neutral-700">
                 “{t.quote}”
               </blockquote>
               <figcaption className="mt-4 text-xs font-bold text-neutral-500">
