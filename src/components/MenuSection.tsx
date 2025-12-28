@@ -20,7 +20,7 @@ function classNames(...xs: Array<string | false | null | undefined>) {
 
 function PriceChip({ value }: { value: number }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-amber-200 bg-gradient-to-r from-amber-50 to-amber-100 px-3 py-1 text-xs font-extrabold text-amber-900 shadow-sm">
+    <span className="inline-flex items-center rounded-full border border-amber-200 bg-linear-to-r from-amber-50 to-amber-100 px-3 py-1 text-xs font-extrabold text-amber-900 shadow-sm">
       {formatRupiah(value)}
     </span>
   );
@@ -45,7 +45,7 @@ function MenuCard({ item, highlight }: { item: MenuItem; highlight: boolean }) {
           className="object-cover transition duration-300 group-hover:scale-105"
           priority={item.isBestSeller === true}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/25 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
 
         {item.isBestSeller ? (
           <div className="absolute left-3 top-3 flex items-center gap-2">

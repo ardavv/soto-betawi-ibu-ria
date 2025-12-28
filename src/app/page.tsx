@@ -29,7 +29,7 @@ function BestSellerRow() {
               className="object-cover transition duration-300 group-hover:scale-105"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/25 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
             <div className="absolute left-3 top-3 inline-flex rounded-full bg-emerald-600 px-3 py-1 text-xs font-extrabold text-white shadow-sm">
               Best Seller
             </div>
@@ -64,9 +64,9 @@ export default function Page() {
     <main className="min-h-screen bg-neutral-50 pb-28 text-neutral-900">
       {/* Background glow halus */}
       <div className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-amber-200/35 blur-3xl" />
+        <div className="absolute -top-40 left-1/2 h-130 w-130 -translate-x-1/2 rounded-full bg-amber-200/35 blur-3xl" />
         <div className="absolute -bottom-40 right-0 h-[520px] w-[520px] rounded-full bg-emerald-200/30 blur-3xl" />
-        <div className="absolute left-0 top-1/3 h-[380px] w-[380px] -translate-x-1/2 rounded-full bg-orange-200/25 blur-3xl" />
+        <div className="absolute left-0 top-1/3 h-95 w-95 -translate-x-1/2 rounded-full bg-orange-200/25 blur-3xl" />
       </div>
 
       {/* Header */}
@@ -112,7 +112,7 @@ export default function Page() {
       {/* Hero */}
       <section className="py-12">
         <div className="mx-auto w-full max-w-5xl px-5">
-          <div className="relative overflow-hidden rounded-3xl border border-amber-100/70 bg-gradient-to-br from-white via-amber-50/60 to-emerald-50/60 p-6 shadow-sm backdrop-blur md:p-8">
+          <div className="relative overflow-hidden rounded-3xl border border-amber-100/70 bg-linear-to-br from-white via-amber-50/60 to-emerald-50/60 p-6 shadow-sm backdrop-blur md:p-8">
             <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-amber-200/40 blur-3xl" />
             <div className="pointer-events-none absolute -bottom-32 left-10 h-64 w-64 rounded-full bg-emerald-200/35 blur-3xl" />
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:items-center">
@@ -210,10 +210,7 @@ export default function Page() {
                     Daging
                   </span>{" "}
                   atau{" "}
-                  <span className="font-extrabold text-neutral-800">
-                    Campur
-                  </span>
-                  .
+                  <span className="font-extrabold text-neutral-800">Paru</span>.
                 </p>
               </div>
 
@@ -227,7 +224,7 @@ export default function Page() {
                     className="object-cover"
                     priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/40 via-black/10 to-transparent" />
                   <div className="absolute bottom-4 left-4 rounded-2xl bg-white/90 px-4 py-3 shadow-lg">
                     <div className="text-xs font-semibold text-emerald-700">
                       Signature Bowl
@@ -292,7 +289,7 @@ export default function Page() {
           <div className="rounded-3xl border border-neutral-200/70 bg-white/80 p-6 shadow-sm backdrop-blur md:p-8">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center">
               <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm">
-                <div className="relative h-[320px] w-full md:h-[360px]">
+                <div className="relative h-80 w-full md:h-90">
                   <Image
                     src="/images/gerobak.jpg"
                     alt="Outlet / Gerobak Soto Betawi Ibu Ria Kalibata"
@@ -341,7 +338,7 @@ export default function Page() {
 
                 <div className="mt-5 flex flex-wrap gap-2">
                   <a
-                    className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-5 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-emerald-700 active:translate-y-[1px]"
+                    className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-5 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-emerald-700 active:translate-y-px"
                     href={site.gofoodUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -349,7 +346,7 @@ export default function Page() {
                     Order via GoFood
                   </a>
                   <a
-                    className="inline-flex items-center justify-center rounded-xl border border-neutral-200 bg-white px-5 py-3 text-sm font-extrabold text-neutral-900 shadow-sm hover:bg-neutral-50 active:translate-y-[1px]"
+                    className="inline-flex items-center justify-center rounded-xl border border-neutral-200 bg-white px-5 py-3 text-sm font-extrabold text-neutral-900 shadow-sm hover:bg-neutral-50 active:translate-y-px"
                     href={site.grabfoodUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -380,7 +377,7 @@ export default function Page() {
 
             <div className="mt-5 flex flex-wrap gap-2">
               <a
-                className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-5 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-emerald-700 active:translate-y-[1px]"
+                className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-5 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-emerald-700 active:translate-y-px"
                 href={site.gofoodUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -388,7 +385,7 @@ export default function Page() {
                 Order via GoFood
               </a>
               <a
-                className="inline-flex items-center justify-center rounded-xl border border-neutral-200 bg-white px-5 py-3 text-sm font-extrabold text-neutral-900 shadow-sm hover:bg-neutral-50 active:translate-y-[1px]"
+                className="inline-flex items-center justify-center rounded-xl border border-neutral-200 bg-white px-5 py-3 text-sm font-extrabold text-neutral-900 shadow-sm hover:bg-neutral-50 active:translate-y-px"
                 href={site.grabfoodUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -430,7 +427,7 @@ export default function Page() {
 
                 <div className="mt-4 flex flex-wrap gap-2">
                   <a
-                    className="inline-flex items-center justify-center rounded-xl bg-amber-500 px-5 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-amber-600 active:translate-y-[1px]"
+                    className="inline-flex items-center justify-center rounded-xl bg-amber-500 px-5 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-amber-600 active:translate-y-px"
                     href={site.mapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -461,7 +458,7 @@ export default function Page() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63457.013236310704!2d106.7741466216797!3d-6.255387799999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3656b67dae9%3A0x2b8c98240bc45cb3!2sSoto%20Betawi%20Bu%20Ria%20Kalibata!5e0!3m2!1sid!2sid!4v1766893363318!5m2!1sid!2sid"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  className="h-80 w-full border-0 md:h-[380px]"
+                  className="h-80 w-full border-0 md:h-95"
                 />
               </div>
             </div>

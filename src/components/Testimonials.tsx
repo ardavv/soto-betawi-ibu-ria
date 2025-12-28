@@ -24,7 +24,7 @@ export default function Testimonials() {
             Kata Mereka
           </h2>
           <p className="mt-1 text-sm leading-relaxed text-neutral-600">
-            (Placeholder) Nanti kamu bisa ganti dengan review asli.
+            Pelanggan Soto Betawi Ibu Ria
           </p>
         </div>
 

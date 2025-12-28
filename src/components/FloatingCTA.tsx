@@ -15,7 +15,7 @@ export default function FloatingCTA() {
     >
       <div className="grid grid-cols-3 gap-2">
         <a
-          className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-3 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-emerald-700 active:translate-y-[1px]"
+          className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-3 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-emerald-700 active:translate-y-px"
           href={site.gofoodUrl}
           target="_blank"
           rel="noopener noreferrer"
@@ -25,7 +25,7 @@ export default function FloatingCTA() {
         </a>
 
         <a
-          className="inline-flex items-center justify-center rounded-xl border border-neutral-200 bg-white px-3 py-3 text-sm font-extrabold text-neutral-900 shadow-sm hover:bg-neutral-50 active:translate-y-[1px]"
+          className="inline-flex items-center justify-center rounded-xl border border-neutral-200 bg-white px-3 py-3 text-sm font-extrabold text-neutral-900 shadow-sm hover:bg-neutral-50 active:translate-y-px"
           href={site.grabfoodUrl}
           target="_blank"
           rel="noopener noreferrer"
