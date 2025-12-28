@@ -73,7 +73,16 @@ export const menuItems: MenuItem[] = [
     category: "SIDE",
     price: 3000,
     description: "Renyes gurih pendamping soto.",
-    image: { src: "/images/peyek.jpg", alt: "Pelengkap (Kerupuk)" },
+    image: { src: "/images/kerupuk-putih.webp", alt: "Pelengkap (Kerupuk)" },
+  },
+  {
+    id: "emping",
+    name: "Emping",
+    category: "SIDE",
+    price: 5000,
+    description:
+      "Emping renyah gurih pelengkap soto. (pembelian soto sudah dilengkapi emping)",
+    image: { src: "/images/emping.png", alt: "Pelengkap (Emping)" },
   },
   {
     id: "peyek",
@@ -97,7 +106,7 @@ export const menuItems: MenuItem[] = [
     category: "MINUMAN",
     price: 10000,
     description: "Jeruk segar, balance sama kuah gurih.",
-    image: { src: "/images/es-teh-manis.jpg", alt: "Jeruk es/panas" },
+    image: { src: "/images/jeruk-es-panas.webp", alt: "Jeruk es/panas" },
   },
 ];
 

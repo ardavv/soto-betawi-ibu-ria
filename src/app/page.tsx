@@ -116,7 +116,7 @@ export default function Page() {
             <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-amber-200/40 blur-3xl" />
             <div className="pointer-events-none absolute -bottom-32 left-10 h-64 w-64 rounded-full bg-emerald-200/35 blur-3xl" />
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:items-center">
-          <div>
+              <div>
                 <div className="inline-flex items-center gap-2 rounded-full border border-amber-200/80 bg-white/80 px-3 py-2 text-xs font-extrabold text-amber-900 shadow-sm">
                   ✨ Kuah lebih gurih • Best seller: Daging, Paru, Campur
                 </div>
@@ -206,14 +206,18 @@ export default function Page() {
 
                 <p className="mt-4 text-xs leading-relaxed text-neutral-500">
                   Tips: kalau baru pertama kali coba, mulai dari{" "}
-                  <span className="font-extrabold text-neutral-800">Daging</span>{" "}
+                  <span className="font-extrabold text-neutral-800">
+                    Daging
+                  </span>{" "}
                   atau{" "}
-                  <span className="font-extrabold text-neutral-800">Campur</span>
+                  <span className="font-extrabold text-neutral-800">
+                    Campur
+                  </span>
                   .
                 </p>
-          </div>
+              </div>
 
-          <div className="grid gap-3">
+              <div className="grid gap-3">
                 <div className="relative h-80 overflow-hidden rounded-3xl border border-white/80 bg-white shadow-lg">
                   <Image
                     src="/images/soto-betawi-daging.webp"
@@ -234,43 +238,43 @@ export default function Page() {
                   </div>
                 </div>
 
-            {/* Mini gallery (tambah foto gerobak di sini) */}
+                {/* Mini gallery (tambah foto gerobak di sini) */}
                 <div className="grid grid-cols-4 gap-3">
                   <div className="relative h-24 overflow-hidden rounded-2xl border border-white/80 bg-white shadow-sm">
-                <Image
-                  src="/images/peyek.jpg"
-                  alt="Peyek"
-                  fill
-                  sizes="120px"
-                  className="object-cover"
-                />
-              </div>
+                    <Image
+                      src="/images/peyek.jpg"
+                      alt="Peyek"
+                      fill
+                      sizes="120px"
+                      className="object-cover"
+                    />
+                  </div>
                   <div className="relative h-24 overflow-hidden rounded-2xl border border-white/80 bg-white shadow-sm">
-                <Image
-                  src="/images/es-teh-manis.jpg"
-                  alt="Es Teh Manis"
-                  fill
-                  sizes="120px"
-                  className="object-cover"
-                />
-              </div>
+                    <Image
+                      src="/images/es-teh-manis.jpg"
+                      alt="Es Teh Manis"
+                      fill
+                      sizes="120px"
+                      className="object-cover"
+                    />
+                  </div>
                   <div className="relative h-24 overflow-hidden rounded-2xl border border-white/80 bg-white shadow-sm">
-                <Image
-                  src="/images/soto-betawi-ayam.webp"
-                  alt="Soto Betawi Ayam"
-                  fill
-                  sizes="120px"
-                  className="object-cover"
-                />
-              </div>
+                    <Image
+                      src="/images/soto-betawi-ayam.webp"
+                      alt="Soto Betawi Ayam"
+                      fill
+                      sizes="120px"
+                      className="object-cover"
+                    />
+                  </div>
                   <div className="relative h-24 overflow-hidden rounded-2xl border border-white/80 bg-white shadow-sm">
-                <Image
-                  src="/images/gerobak.jpg"
-                  alt="Outlet / Gerobak Soto Betawi Ibu Ria Kalibata"
-                  fill
-                  sizes="120px"
-                  className="object-cover"
-                />
+                    <Image
+                      src="/images/gerobak.jpg"
+                      alt="Outlet / Gerobak Soto Betawi Ibu Ria Kalibata"
+                      fill
+                      sizes="120px"
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -446,7 +450,7 @@ export default function Page() {
                   <div className="flex items-center justify-between gap-3 py-2">
                     <span className="text-sm text-neutral-500">Order</span>
                     <span className="text-sm font-extrabold text-neutral-900">
-                      GoFood / GrabFood
+                      Offline, GoFood,dan GrabFood
                     </span>
                   </div>
                 </div>
@@ -454,8 +458,7 @@ export default function Page() {
 
               <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm">
                 <iframe
-                  title="Google Maps"
-                  src={mapsEmbedSrc}
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63457.013236310704!2d106.7741466216797!3d-6.255387799999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3656b67dae9%3A0x2b8c98240bc45cb3!2sSoto%20Betawi%20Bu%20Ria%20Kalibata!5e0!3m2!1sid!2sid!4v1766893363318!5m2!1sid!2sid"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="h-80 w-full border-0 md:h-[380px]"
