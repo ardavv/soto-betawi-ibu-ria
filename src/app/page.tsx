@@ -132,7 +132,7 @@ export default function Page() {
 
                 <div className="mt-5 grid grid-cols-3 gap-3">
                   {[
-                    { label: "4.9/5", desc: "Rating pelanggan" },
+                    // { label: "4.9/5", desc: "Rating pelanggan" },
                     { label: "20+ Tahun", desc: "Resep keluarga" },
                     { label: "Buka", desc: site.hours },
                   ].map((item) => (
